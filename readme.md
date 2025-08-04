@@ -49,7 +49,6 @@ terraform plan<br>
 4.Infrastructure was destroyed after testing:
 terraform destroy
 ![Destroy Completed](/assets/image-2.png)
- !['Destroy Completed'](/assets/images/image-2.png) 
 !['Instance Terminated'](/assets/assets/image-3.png)
 
 
