@@ -6,10 +6,10 @@ This project uses Terraform to provision a simple EC2 instance in AWS.
 
 ## 📁 Files Included
 
-my-terraform-project/
-├── main.tf
-└── README.md
-![alt text](image-1.png)
+my-terraform-project/<br>
+├── main.tf<br>
+└── README.md<br>
+![alt text](assets/image-1.png)
 
 ---
 
@@ -44,14 +44,13 @@ terraform init
 
 4.EC2 instance was verified in the AWS Console under region us-east-1.
 terraform plan
-![alt text](image.png)
+![alt text](assets/image.png)
 
 4.Infrastructure was destroyed after testing:
 terraform destroy
+![alt text](assets/image-2.png)
 
-![alt text](image-2.png)
-
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
 
 
