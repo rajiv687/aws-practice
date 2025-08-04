@@ -9,7 +9,7 @@ This project uses Terraform to provision a simple EC2 instance in AWS.
 my-terraform-project/<br>
 ├── main.tf<br>
 └── README.md<br>
-![alt text](assets/image-1.png)
+![Folder Structure](assets/image-1.png)
 
 ---
 
@@ -43,14 +43,14 @@ terraform init
 3.Execution plan was generated:
 
 4.EC2 instance was verified in the AWS Console under region us-east-1.
-terraform plan
-![alt text](assets/image.png)
+terraform plan<br>
+![Instance created](assets/image.png)
 
 4.Infrastructure was destroyed after testing:
 terraform destroy
-![alt text](assets/image-2.png)
-
-![alt text](assets/image-3.png)
+![Destroy Completed](/assets/image-2.png)
+ !['Destroy Completed'](/assets/images/image-2.png) 
+!['Instance Terminated'](/assets/assets/image-3.png)
 
 
 
