@@ -44,13 +44,14 @@ terraform init
 
 4.EC2 instance was verified in the AWS Console under region us-east-1.
 terraform plan<br>
-!['Instance created'](https://github.com/rajiv687/aws-practice/blob/feature/terraform-create-ec2/assets/image.png)
+![Instance Created](assets/image.png)
 
 
 5.Infrastructure was destroyed after testing:
 terraform destroy
-!['Destroy Completed'](/assets/image-2.png)
-!['Instance Terminated'](/assets/image-3.png)
+![Destroy Completed](assets/image-2.png)
+Instance Terminated
+![Instance Terminated](assets/image-3.png)
 
 
 
