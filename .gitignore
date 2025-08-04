@@ -3,3 +3,7 @@
 *.tfstate
 *.tfstate.backup
 *.exe
+# Ignore local Terraform directories and state
+.terraform/
+*.tfstate
+*.tfstate.backup
