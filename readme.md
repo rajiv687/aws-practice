@@ -3,7 +3,7 @@ This guide explains how to set up infrastructure using Terraform modules with te
 
 📁 Project Structure
 
-![alt text](assets/image.png)
+![alt text](assets/image6.png)
 
 
 🧱 Step 1: Create Terraform Module <br>
