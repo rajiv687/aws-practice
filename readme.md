@@ -54,7 +54,7 @@ Instance Terminated
 
 
 
-🧾 Notes
+🧾 Notes <br>
 AMI ID used: ami-0c02fb55956c7d316 (Amazon Linux 2 for us-east-1)
 
 Instance type: t2.micro
