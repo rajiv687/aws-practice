@@ -1,5 +1,5 @@
-🚀 Terraform + Terragrunt Setup (AWS)
-This guide explains how to set up infrastructure using Terraform modules with Terragrunt for DRY, maintainable, and environment-specific deployments. <br>
+🚀 Terraform and terragrunt setup (AWS)
+This guide explains how to set up infrastructure using Terraform modules with terragrunt for DRY, maintainable, and environment-specific deployments. <br>
 
 📁 Project Structure
 
