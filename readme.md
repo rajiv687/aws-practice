@@ -3,7 +3,7 @@ This guide explains how to set up infrastructure using Terraform modules with te
 
 📁 Project Structure
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 
 🧱 Step 1: Create Terraform Module <br>
@@ -105,28 +105,28 @@ terragrunt apply   # Provisions infrastructure
 ✅ Step 6: Verify in AWS Console
 VPC Dashboard:
 Go to AWS Console → VPC → Your VPCs → Look for dev-vpc
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 
 S3 Bucket:
 Go to AWS Console → S3 → terraform-state-rajiv-2025-xyz123 <br>
 Browse to:
 dev/us-east-1/vpc/terraform.tfstate
 
-![alt text](image-2.png)
+![alt text](assets/image-2.png)
 
 DynamoDB Table:
 Go to AWS Console → DynamoDB → terraform-locks
 See the locking record during apply
 
-![alt text](image-3.png)
+![alt text](assets/image-3.png)
 
-![alt text](image-4.png)
+![alt text](assets/image-4.png)
 
 
 To view outputs after apply:
 terragrunt output
 
-![alt text](image-5.png)
+![alt text](assets/image-5.png)
 
 
 🔁  Apply All Modules at Once
