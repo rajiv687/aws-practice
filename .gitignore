@@ -1,0 +1,29 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Ignore Terraform and Terragrunt working directories
+.terraform/
+.terragrunt-cache/
+
+# Ignore backup and log files
+*.backup
+*.log
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore IDE or OS-specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
