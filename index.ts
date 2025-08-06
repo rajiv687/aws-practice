@@ -1,37 +1,6 @@
 import axios from 'axios';
+import { User } from './interfaces/User';
 
-/**
- * TypeScript interfaces for the API response
- */
-interface Geo {
-  lat: string;
-  lng: string;
-}
-
-interface Address {
-  street: string;
-  suite: string;
-  city: string;
-  zipcode: string;
-  geo: Geo;
-}
-
-interface Company {
-  name: string;
-  catchPhrase: string;
-  bs: string;
-}
-
-export interface User {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address: Address;
-  phone: string;
-  website: string;
-  company: Company;
-}
 
 /**
  * Function to fetch users using async/await and return a promise
@@ -50,6 +19,7 @@ async function fetchUsers(): Promise<User[]> {
 /**
  * Calling the function and printing results
  */
+
 (async () => {
   try {
     const users = await fetchUsers();
