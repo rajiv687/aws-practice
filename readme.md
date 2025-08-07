@@ -43,7 +43,7 @@ npm install --save-dev typescript ts-node
 ---
 🧾 Project Structure<br>
 
-![alt text](assets/image.png)
+![alt text](assets/image-3.png)
 
 
 ---
@@ -56,7 +56,7 @@ npx ts-node index.ts
 
 📄 Output
 We should see a list of users fetched from the dummy API:
-![alt text](assets/image-1.png)
+![alt text](assets/image.png)
 
 
 ---
