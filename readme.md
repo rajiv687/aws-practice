@@ -1,77 +1,54 @@
-# 🧠 Dummy API Caller with Node.js & TypeScript
+#  Parallel API Calls with Node.js + TypeScript
 
-This is a simple Node.js + TypeScript project that fetches data from a dummy API using `axios`, `async/await`, and TypeScript interfaces.
-
----
-
-## 📦 Prerequisites
-
-- Node.js (v20+ recommended)
-- npm  installed globally
+This project demonstrates how to use **Node.js** and **TypeScript** to fetch data from two public APIs **in parallel** using `axios`, `async/await`, and TypeScript **interfaces**.
 
 ---
 
-## 🚀 Getting Started
+## 🔗 APIs Used
 
-###  Clone the Repository (or create your own folder)
+- **Posts API** (Dummy blog posts):  
+  `https://jsonplaceholder.typicode.com/posts`
 
-Initialize the Project
-
-npm init -y
-
-
-Install Dependencies<br>
-npm install axios<br>
-npm install --save-dev typescript ts-node
-
-
- Setup TypeScript<br>
- npx tsc --init
-
-
-{
-  "compilerOptions": {<br>
-    "target": "ES2020",<br>
-    "module": "commonjs",<br>
-    "strict": true,<br>
-    "esModuleInterop": true,<br>
-    "skipLibCheck": true,<br>
-    "forceConsistentCasingInFileNames": true<br>
-  }<br>
-}
+- **Dog API** (Random dog image):  
+  `https://dog.ceo/api/breeds/image/random`
 
 ---
-🧾 Project Structure<br>
 
-![alt text](assets/image-3.png)
+## 🧱 Project Structure
+![alt text](assets/image.png)
+
+---
+
+
+## 📦 Setup & Run
+### 1. Clone & Install
+
+git clone <your-repo-url>
+npm install
 
 
 ---
 
-▶️ Running the Code
+Run Code
 
 npx ts-node index.ts
 
----
-
-📄 Output
-We should see a list of users fetched from the dummy API:
-![alt text](assets/image.png)
-
 
 ---
+🧑‍💻 Tech Stack
 
-📚 API Used
-https://jsonplaceholder.typicode.com/users
+TypeScript
 
+Node.js
+
+Axios
+
+Promises, Async/Await
+
+TypeScript Interfaces & Types
 
 ---
 
-📌 Features
-Written in TypeScript
+✅ Output
 
-Uses axios for HTTP requests
-
-Uses Promises, async/await
-
-Includes TypeScript interfaces and types
+![alt text](assets/image-1.png)

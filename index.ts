@@ -1,33 +1,34 @@
 import axios from 'axios';
-import { User } from './interfaces/User';
+import { DogResponse } from './interfaces/Dog';
+import { Post } from './interfaces/Post';
+import { DOG_API, POSTS_API } from './constants/urls';
 
+async function fetchDogImage(): Promise<DogResponse> {
+  const res = await axios.get<DogResponse>(DOG_API);
+  return res.data;
+}
 
-/**
- * Function to fetch users using async/await and return a promise
- * @returns 
- */
-async function fetchUsers(): Promise<User[]> {
+async function fetchPosts(): Promise<Post[]> {
+  const res = await axios.get<Post[]>(POSTS_API);
+  return res.data;
+}
+
+async function fetchInParallelData() {
   try {
-    const response = await axios.get<User[]>('https://jsonplaceholder.typicode.com/users');
-    return response.data;
+    console.log('Fetching dog image and posts in parallel...');
+
+    const [dog, posts] = await Promise.all([
+      fetchDogImage(),
+      fetchPosts()
+    ]);
+
+    console.log('Dog Image URL:', dog.message);
+    console.log(`Total Posts: ${posts.length}`);
+    console.log('First Post:', posts[0].title);
+
   } catch (error) {
-    console.error('Error fetching users:', error);
-    throw new Error('Unable to fetch users');
+    console.error('Error fetching data:', error);
   }
 }
 
-/**
- * Calling the function and printing results
- */
-
-(async () => {
-  try {
-    const users = await fetchUsers();
-    console.log('Fetched Users:');
-    users.forEach(user => {
-      console.log(`${user.id}. ${user.name} (${user.email})`);
-    });
-  } catch (err) {
-    console.error('Error:', err);
-  }
-})();
+fetchInParallelData();
