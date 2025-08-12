@@ -1,6 +1,6 @@
 #  Parallel API Calls with Node.js + TypeScript
 
-This project demonstrates how to use **Node.js** and **TypeScript** to fetch data from two public APIs **in parallel** using `axios`, `async/await`, and TypeScript **interfaces**.
+This project demonstrates how to use **Node.js** and **TypeScript** to fetch data from two public APIs **in parallel** using `axios`, `async/await`, and TypeScript **interfaces**, **constants**.
 
 ---
 
