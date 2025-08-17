@@ -1,54 +1,83 @@
-#  Parallel API Calls with Node.js + TypeScript
+Node.js + TypeScript File CRUD Examples
 
-This project demonstrates how to use **Node.js** and **TypeScript** to fetch data from two public APIs **in parallel** using `axios`, `async/await`, and TypeScript **interfaces**, **constants**.
+This project demonstrates Create, Read, Update, Delete (CRUD) operations on files in three different ways using Node.js and TypeScript:
 
----
+Synchronous – Blocking file operations (fs.writeFileSync, fs.readFileSync, etc.)
 
-## 🔗 APIs Used
+Asynchronous – Non-blocking operations using Promises (fs/promises)
 
-- **Posts API** (Dummy blog posts):  
-  `https://jsonplaceholder.typicode.com/posts`
-
-- **Dog API** (Random dog image):  
-  `https://dog.ceo/api/breeds/image/random`
+Streams – Chunk-based reading and writing for large files
 
 ---
 
-## 🧱 Project Structure
-![alt text](assets/image.png)
+📂 Project Structure
+![alt text](image.png)
+
+⚡ Prerequisites
+
+Node.js v18+
+
+npm
+
+TypeScript (installed locally or globally)
 
 ---
 
+🛠 Installation <br>
+Install dependencies:<br>
+npm install<br>
 
-## 📦 Setup & Run
-### 1. Clone & Install
+Initialize TypeScript (if not already):<br>
 
-git clone <your-repo-url>
-npm install
+npx tsc --init
+
+---
+
+🚀 How to Run <br>
+Compile TypeScript files to JavaScript:
+
+npx tsc
+
+Run the program: <br>
+
+node dist/index.js
+
+---
+
+📖 Features
+1. Synchronous
+
+Blocks execution until each operation finishes.
+
+Simple for small scripts.
+
+2. Asynchronous
+
+Uses promises and await for non-blocking I/O.
+
+Recommended for real-world applications.
+
+3. Stream-based
+
+Reads and writes files in chunks.
+
+Efficient for large files.
+
+Uses events (finish, data, end) for flow control.
 
 
 ---
 
-Run Code
+🔧 Customization
 
-npx ts-node index.ts
+To keep files after running, comment out the fs.unlink() lines in each module.
 
-
----
-🧑‍💻 Tech Stack
-
-TypeScript
-
-Node.js
-
-Axios
-
-Promises, Async/Await
-
-TypeScript Interfaces & Types
+Change file names or paths inside each module to avoid overwriting existing files.
 
 ---
 
-✅ Output
+📌 Notes
 
-![alt text](assets/image-1.png)
+No external npm packages required besides TypeScript and @types/node.
+
+Works on Windows, macOS, and Linux.
