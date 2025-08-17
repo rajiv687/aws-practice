@@ -13,6 +13,8 @@ Streams – Chunk-based reading and writing for large files
 📂 Project Structure
 ![alt text](image.png)
 
+---
+
 ⚡ Prerequisites
 
 Node.js v18+
