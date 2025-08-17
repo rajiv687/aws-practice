@@ -11,7 +11,7 @@ Streams – Chunk-based reading and writing for large files
 ---
 
 📂 Project Structure
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ---
 
